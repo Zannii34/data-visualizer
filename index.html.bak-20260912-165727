@@ -12,11 +12,6 @@
 <header class="site-header">
 <h1>Data Visualizer</h1>
 <p>Upload a CSV or JSON file. Get interactive charts.</p>
-<div class="dv-features">
-  <span>4 chart types</span>
-  <span>No upload</span>
-  <span>100% in-browser</span>
-</div>
 </header>
 <main class="container">
 <section class="upload-zone" id="uploadZone">
@@ -26,7 +21,6 @@
 <strong>Drop a file here</strong>
 <span>or <button type="button" id="browseBtn">browse</button></span>
 <span class="hint">Accepts .csv and .json</span>
-<div style="margin-top:1rem"><button type="button" id="loadSampleBtn" class="btn-sample"> Try with sample data</button></div>
 </div>
 </section>
 <section class="preview hidden" id="previewSection">

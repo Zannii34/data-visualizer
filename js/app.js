@@ -139,3 +139,30 @@ function renderStats() {
     "<div class=\\"stat-card\\"><span>Columns</span><strong>" + currentColumns.length + "</strong></div>" +
     "<div class=\\"stat-card\\"><span>Numeric columns</span><strong>" + numericCols.length + "</strong></div>";
 }
+
+// Sample data loader
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("loadSampleBtn");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    const sample = [
+      { month: "2026-01", revenue: 42000, expenses: 28000, profit: 14000 },
+      { month: "2026-02", revenue: 45000, expenses: 29000, profit: 16000 },
+      { month: "2026-03", revenue: 51000, expenses: 31000, profit: 20000 },
+      { month: "2026-04", revenue: 48000, expenses: 30000, profit: 18000 },
+      { month: "2026-05", revenue: 55000, expenses: 32000, profit: 23000 },
+      { month: "2026-06", revenue: 61000, expenses: 34000, profit: 27000 },
+      { month: "2026-07", revenue: 58000, expenses: 33000, profit: 25000 },
+      { month: "2026-08", revenue: 64000, expenses: 35000, profit: 29000 },
+      { month: "2026-09", revenue: 72000, expenses: 38000, profit: 34000 },
+      { month: "2026-10", revenue: 69000, expenses: 37000, profit: 32000 },
+      { month: "2026-11", revenue: 75000, expenses: 39000, profit: 36000 },
+      { month: "2026-12", revenue: 82000, expenses: 42000, profit: 40000 }
+    ];
+    if (typeof currentData !== "undefined") {
+      window.currentData = sample;
+      window.currentColumns = Object.keys(sample[0]);
+      if (typeof render === "function") render();
+    }
+  });
+});
