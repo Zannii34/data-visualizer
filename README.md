@@ -1,4 +1,4 @@
-﻿# Data Visualizer
+# Data Visualizer
 
 Upload a CSV or JSON file. Get interactive charts. Runs entirely in the browser.
 
