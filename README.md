@@ -1,5 +1,8 @@
 # Data Visualizer
 
+![JavaScript](https://img.shields.io/badge/javascript-ES6-yellow) ![Chart.js](https://img.shields.io/badge/chart.js-4.0-red)
+
+
 Upload a CSV or JSON file. Get interactive charts. Runs entirely in the browser.
 
 ## Live Demo
